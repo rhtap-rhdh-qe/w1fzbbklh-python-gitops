@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: w1fzbbklh-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: w1fzbbklh-python 
+  name: w1fzbbklh-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: w1fzbbklh-python 
